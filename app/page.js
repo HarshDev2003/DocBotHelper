@@ -1,7 +1,8 @@
 import Image from "next/image";
-
+import landing from "@/page/landing";
 export default function Home() {
   return (
-  <div className="logo">DocBot Helper</div>
+  
+  <landing />
   );
 }
