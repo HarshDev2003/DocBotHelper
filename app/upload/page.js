@@ -1,9 +1,11 @@
 import React from 'react'
+import Navbar from '@/components/Navbar';
 
 
 const page = () => {
   return (
    <>
+   <Navbar />
    <div className="left float-left w-2/3 h-screen bg-red-700 ">
    
    

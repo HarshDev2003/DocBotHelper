@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <>
-  <main className=' bg-blue-200'>
+  <main className=' bg-indigo-300'>
   <div className="flex items-center">
     <div className="flex items-center border-2 border-solid border-white bg-white rounded-full mx-5 p-2 my-2 align-center">
 

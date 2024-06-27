@@ -1,9 +1,12 @@
 import React from 'react'
+import Navbar from '@/components/Navbar'
 
 const page = () => {
   return (
-    <body className= "body">
-      <div className="body  bg-blue-400">
+    
+    <div className= "">
+      <Navbar/>
+      <div className="bg-indigo-300">
       <div className="left float-left  mx-30rem w-1/2">
       <div className="text text-center h-screen w-full flex flex-col space-y-9 justify-center items-center text-3xl font-bold">"Discover Answers Instantly <br /> with Our PDF Q&A Bot" <br />
 
@@ -18,7 +21,8 @@ digital assistant is here to help!</div>
       <img className='w-1/2 ' src="/right.png " alt="" />
       </div>
       </div>
-    </body>
+    </div>
+   
   )
 }
 
