@@ -1,28 +1,47 @@
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 const Navbar = () => {
   return (
     <>
-  <main className=' bg-indigo-300'>
-  <div className="flex items-center">
-    <div className="flex items-center border-2 border-solid border-white bg-white rounded-full mx-5 p-2 my-2 align-center">
 
-      <img src="/logo.png" width="50" height="50" alt="Picture of the author"/>
-      <div className="name align-baseline text-xl font-bold text-blue-500">DocBot Helper</div>
-    </div>
-    <div classNameName="nav-item"></div>
-    <ul className="flex justify-end items-center flex-1 font-bold  text-blue-500 border-2 space-x-8 border-solid border-white rounded-full bg-white">
-      <li className="mx-2">Home</li>
-      <li className="mx-2">Help</li>
-      <li className="mx-2">About</li>
-      <li className="mx-2 ">Setting</li>
-      <li className="w-28 mx-2 p-2 text-center text-white border-2 border-solid border-blue-500 rounded-full bg-blue-500">User</li>
-
-    </ul>
-  </div>
-</main>
-
-   </>
+      <nav className="bg-blue-500 h-10">
+        <div className="flex h-full items-center">
+          <div className="flex h-full items-center p-1 border-2 border-solid border-white bg-white rounded-full align-center">
+            <img
+              src="/logo.png"
+              width="40"
+              height="40"
+              alt="Picture of the author"
+            />
+            <div className="name align-baseline text-[15px] font-bold text-blue-500">
+              DocBot Helper
+            </div>
+          </div>
+          <div classNameName=""></div>
+          <ul className="flex text-[15px] justify-end items-center flex-1 font-bold text-blue-500 border-2 space-x-8 border-solid border-white rounded-full bg-white">
+            <Link href={""}>
+              <li className="mx-2">Home</li>
+            </Link>
+            <Link href={""}>
+              <li className="mx-2">Help</li>
+            </Link>
+            <Link href={""}>
+              <li className="mx-2">About</li>
+            </Link>
+            <Link href={""}>
+              <li className="mx-2 ">Setting</li>
+            </Link>
+            <Link href={""}>
+              <li className="w-20 p-1 text-center text-white border-2 border-solid border-blue-500 rounded-full bg-blue-500">
+                User
+              </li>
+            </Link>
+          </ul>
+        </div>
+      </nav>
+    </>
+// >>>>>>> 61ca488ac51c73e3fb90e72e0b52a69e2b54820b
   );
 };
 

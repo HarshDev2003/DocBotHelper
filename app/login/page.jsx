@@ -10,9 +10,9 @@ export default function page() {
   
     <>
     <div className="flex justify-between h-screen p-40 bg-gray-100">
-    <div className="w-1/2 p-10 flex items-center justify-center flex-col bg-white rounded-lg shadow-lg p-10 text-center">
+    <div className="w-1/2 p-10 flex items-center justify-center flex-col bg-white rounded-lg shadow-lg text-center">
         <h1 className="text-3xl font-bold mb-6">LOGIN</h1>
-        <p className="text-gray-600 mb-8">How to i get started lorem ipsum dolor at?</p>
+        {/* <p className="text-gray-600 mb-8">How to i get started lorem ipsum dolor at?</p> */}
         <div className="mb-4">
         <div className="mb-6">
   <label for="username" className="block text-gray-700 text-sm font-bold mb-2">Username</label>
@@ -30,6 +30,11 @@ export default function page() {
     className="max-w-xs border border-gray-300 text-gray-700 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
   />
 </div>
+
+<a href="../register">Create Your Account</a>
+
+
+
 
             {/* <input type="password" id="password" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"> */}
         </div>
