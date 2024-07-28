@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
 
-      <nav className="bg-blue-500 h-10">
+      <nav className=" h-10">
         <div className="flex h-full items-center">
           <div className="flex h-full items-center p-1 border-2 border-solid border-white bg-white rounded-full align-center">
             <img

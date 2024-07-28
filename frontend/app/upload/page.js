@@ -7,10 +7,6 @@ const page = () => {
    <>
    <Navbar />
    <div className="left float-left w-2/3 h-screenfrom-indigo-400 bg-gradient-to-b  rounded-lg shadow-lg">
-   
-
-  
-     
    <div className=" flex flex-col items-center justify-center min-h-screen">
             <div className=" rounded-lg p-6 w-full  flex flex-col justify-between flex-grow">
                 <div className="mb-4 flex justify-center">
