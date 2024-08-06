@@ -12,11 +12,47 @@ const Page = () => {
   const [file, setFile] = useState(null);
 
   const handleFileChange = (e) => {
-    if (e.target.files && e.target.files.length > 0) {
-      setFile(e.target.files[0]);
-    }
+    setFile(e.target.files[0]);
+    const selectedFile = e.target.files[0].name;
+    setFile(selectedFile);
+    alert(selectedFile + ' is the selected file.');
+    console.log(selectedFile)
+
   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    
+
+    if (!file) {
+      console.log("No file selected.");
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('file', file);
+    console.log(file);
+
+    try {
+
+      // const response = await fetch('/api/upload', { // Update the URL to your backend endpoint
+        // method: 'POST',
+        // body: formData,
+      // });
+
+      if (response.ok) {
+        console.log("File uploaded successfully.");
+        // Handle successful upload (e.g., show a success message)
+      } else {
+        console.error("File upload failed.");
+        // Handle upload failure (e.g., show an error message)
+      }
+    } catch (error) {
+      console.error("An error occurred during file upload:", error);
+      // Handle network or server errors
+    }
+  };
   return (
     <>
         <Navbar/>
@@ -34,10 +70,11 @@ const Page = () => {
             <form
         onSubmit={(e) => {
           e.preventDefault();
+          // console.log(selectedFile);
           // Handle form submission
         }}
         method="POST"
-        className="w-full py-9 rounded-2xl border gap-3 grid border-dashed"
+        className="w-full py-9 rounded-2xl border gap-5 grid "
       >
         <div className="grid gap-1">
           <svg
@@ -71,6 +108,12 @@ const Page = () => {
                 Choose File
               </div>
             </label>
+        <button
+              type="submit"
+              className="flex w-28 h-9 px-2 flex-col bg-indigo-600 rounded-full shadow text-white text-xs font-semibold leading-4 items-center justify-center cursor-pointer focus:outline-none"
+            >
+              Submit
+            </button>
           </div>
         </div>
       </form>

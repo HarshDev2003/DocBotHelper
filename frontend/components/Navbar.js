@@ -32,7 +32,7 @@ const Navbar = () => {
             <Link href={""}>
               <li className="mx-2 ">Setting</li>
             </Link>
-            <Link href={""}>
+            <Link href={"../login"}>
               <li className="w-20 p-1 text-center text-white border-2 border-solid border-blue-500 rounded-full bg-blue-500">
                 User
               </li>
